@@ -13,7 +13,7 @@ public class NotaAluno {
 
 	public NotaAluno(int matricula, String nome, double notaAV1, double notaAV2, double notaAE, String curso,
 			int periodo) {
-		super();
+		
 		this.matricula = matricula;
 		this.nome = nome;
 		this.notaAV1 = notaAV1;
@@ -42,36 +42,40 @@ public class NotaAluno {
 		this.nome = nome;
 	}
 	
-	public double getNotaAV1() {
+	public double alteraNotaAV1() {
 		return notaAV1;
 		
 	}
 	
 	
-	public void setNotaAV1 (double notaAV1) {
+	public void alteraNotaAV1 (double notaAV1) {
 		this.notaAV1 = notaAV1;
 		
 	}
 	
-	public double getNovaAV2() {
+	public double alteraNotaAV2() {
 		return notaAV2;
 		
 	}
 	
 	
-	public void setnotaAV2 (double notaAV2) {
+	public void alteraNotaAV2(double notaAV2) {
 		this.notaAV2 = notaAV2;	
-		
 	}		
 		
 	
-	public boolean notaAE(double notaAE) {
+	public boolean alteranotaAE(double notaAE) 
+	{
         if (this.notaAE < 60) {
             return false;
  
-        } else {
-            this.notaAE > 60)
+        } 
+        else {
             return true;            
+        } 
 	}
+}
+
+	
         
         
